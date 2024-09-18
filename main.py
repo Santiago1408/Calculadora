@@ -1,3 +1,11 @@
+print("Seleccione la operación que desea realizar: \n 1. Suma \n 2. Resta \n 3. Multiplicación \n 4. División")
+
+operacion = input("Opereación: ")
+
+#Josue Garcia
+def mult(num1, num2):
+    return num1 * num2
+
 # Función para dividir dos números
 def dividir_numeros(dividendo, divisor):
     try:
