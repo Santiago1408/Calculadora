@@ -22,3 +22,9 @@ num1 = float(input("Introduce el primer número: "))
 num2 = float(input("Introduce el segundo número: "))
 resultado = num1 + num2
 print(f"El resultado de la suma es: {resultado}")
+
+# Valeria Adriana Cabrera Chavarria 
+def calcular_exponencial(base, exponente):
+    resultado = base ** exponente
+    print(f"{base}^{exponente} = {resultado}")
+    return resultado
