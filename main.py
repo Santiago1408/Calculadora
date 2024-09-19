@@ -65,3 +65,9 @@ def Factorial(num):
     for i in range(1,num+1):
         aux=aux*i
     return aux
+
+# GEOVANA RUTH QUISPE MAMANI 
+# FUNCION PARA CALCULAR EL PORCENTAJE
+def calcular_porcentaje(total, porcentaje):
+    resultado = (porcentaje / 100) * total
+    return resultado
