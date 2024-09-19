@@ -57,3 +57,11 @@ try:
     
 except ValueError:
     print("Por favor, introduce un número válido.")
+
+#Juan Adiel Butron
+#El factorial de un numero
+def Factorial(num):
+    aux=1
+    for i in range(1,num+1):
+        aux=aux*i
+    return aux
