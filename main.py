@@ -71,3 +71,56 @@ def Factorial(num):
 def calcular_porcentaje(total, porcentaje):
     resultado = (porcentaje / 100) * total
     return resultado
+
+#alejandro contreras
+def llamar_funciones():
+    print("Seleccione la operación que desea realizar:")
+    print("1. Suma")
+    print("2. Resta")
+    print("3. Multiplicación")
+    print("4. División")
+    print("5. Factorial")
+    print("6. Logaritmo")
+    print("7. Exponencial")
+    print("8. Raíz cuadrada")
+
+    operacion = input("Operación: ")
+
+    if operacion in ['1', '2', '3', '4']:
+        num1 = float(input("Introduce el primer número: "))
+        num2 = float(input("Introduce el segundo número: "))
+
+        if operacion == '1':
+            resultado = num1 + num2  # Suma
+            print(f"El resultado de la suma es: {resultado}")
+        elif operacion == '2':
+            resultado = resta(num1, num2)  # Resta
+            print(f"La resta de {num1} y {num2} es: {resultado}")
+        elif operacion == '3':
+            resultado = mult(num1, num2)  # Multiplicación
+            print(f"La multiplicación de {num1} y {num2} es: {resultado}")
+        elif operacion == '4':
+            resultado = dividir_numeros(num1, num2)  # División
+            print(f"La división de {num1} entre {num2} es: {resultado}")
+    elif operacion == '5':
+        num = int(input("Introduce un número para calcular su factorial: "))
+        resultado = factorial(num)
+        print(f"El factorial de {num} es: {resultado}")
+    elif operacion == '6':
+        num = float(input("Introduce el número para el logaritmo: "))
+        base = float(input("Introduce la base: "))
+        resultado = logaritmo(num, base)
+        print(f"El logaritmo de {num} en base {base} es: {resultado}")
+    elif operacion == '7':
+        base = float(input("Introduce la base: "))
+        exponente = float(input("Introduce el exponente: "))
+        calcular_exponencial(base, exponente)
+    elif operacion == '8':
+        num = float(input("Introduce el número para calcular su raíz cuadrada: "))
+        resultado = calcular_raiz(num)
+        print(f"La raíz cuadrada de {num} es: {resultado}")
+    else:
+        error()
+
+if __name__ == "__main__":
+    llamar_funciones()
