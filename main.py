@@ -72,7 +72,7 @@ def calcular_porcentaje(total, porcentaje):
     resultado = (porcentaje / 100) * total
     return resultado
 
-#alejandro contreras
+#Alejandro Contreras
 def llamar_funciones():
     print("Seleccione la operación que desea realizar:")
     print("1. Suma")
