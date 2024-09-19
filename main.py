@@ -6,6 +6,9 @@ operacion = input("Opereación: ")
 def mult(num1, num2):
     return num1 * num2
 
+def error():
+    print("Hubo un error")
+
 # Función para dividir dos números
 def dividir_numeros(dividendo, divisor):
     try:
