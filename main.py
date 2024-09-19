@@ -22,7 +22,12 @@ num1 = float(input("Introduce el primer número: "))
 num2 = float(input("Introduce el segundo número: "))
 resultado = num1 + num2
 print(f"El resultado de la suma es: {resultado}")
-
+#Juaquin Daniel Pickman Arce
+def logaritmo(numero, base = 10):
+    if numero > 0 and base > 0 and base != 1:
+        return math.log(numero, base)
+    else:
+        return "Error: El número debe ser positivo y la base mayor que 0 y diferente de 1."
 # Valeria Adriana Cabrera Chavarria 
 def calcular_exponencial(base, exponente):
     resultado = base ** exponente
